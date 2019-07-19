@@ -4,7 +4,7 @@ const app = express();
 const dogRoutes = require('./routes/dogRoutes');
 
 app.use(express.json()); 
-app.use(express.urlencoded()); //replaces bodyParser middleware
+app.use(express.urlencoded({extended: false})); //replaces bodyParser middleware
 app.use('/dogs', dogRoutes);
 
 require('./db/db');

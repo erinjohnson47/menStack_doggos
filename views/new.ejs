@@ -9,13 +9,16 @@
 <body>
     <h1>Woohoo! You have a Doggo! Please tell us about it!</h1>
     <form action="/dogs" method='POST'> 
-    <input type='text' name='name'>Name<br/>
-    <input type='number' name='paws'>How many Paws does this floofer have?<br/>
-    <input type='text' name='color'>What color is the doggo?<br/>
-    <input type='text' name='breed'>What breed is this pupper?<br/>
-    <input type='text' name='favoriteToys'>What are these doge's favorite toys?<br/>
-    <input type='checkbox' name='isFixed'>Is this pupperino spayed/neutered?<br/>
-    <input type='checkbox' name='isGood'>Is this doggo a very good doggo?<br/>
+   What is your pupper's name?<br/><input type='text' name='name'><br/>
+    What color is this sweet floof?<br/><input type='text' name='color'><br/>
+    Do you have a very good
+    <input type='radio' name='boy'>boy or
+    <input type='radio' name='girl'>girl?<br/>
+    What breed(/s) is(/are) your woofer?<br/><input type='text' name='breed'><br/>
+    Is your bork machine:<br/> <input type='radio' name='small'>smol <span>(less than 20 lbs)</span>,<br/> <input type='radio' name='medium'>medium <span>(20-50 lbs),</span> or <br/><input type='radio' name='large'>lorge <span>(more than 50lbs)</span>?</br>
+    What are this doge's favorite toys? (if your doge is appropriately spoiled, please separate multiple toys with a ';')<br/><input type='text' name='favoriteToys'><br/>
+    Is this pupperino spayed/neutered?<input type='checkbox' name='isFixed'><br/>
+    This doggo is a h*ckin' good fluffer!<input type='checkbox' name='isGood' checked><br/>
     <input type='submit' name='create Woofer'/>
 </body>
 </html>
